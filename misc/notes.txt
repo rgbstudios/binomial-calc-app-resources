@@ -1,0 +1,47 @@
+TODO:
+----------------
+link to rate and share
+
+LINKS:
+manage app: https://play.google.com/apps/publish
+play store: https://play.google.com/store/apps/details?id=org.rgbstudios.binomialdistributioncalculator
+
+VERSION LOG:
+----------------
+1.0.0 alpha
+1.0.1 beta
+1.0.2 stable
+1.0.3 stable
+1.0.4 stable
+
+FIXING PROBLEMS:
+----------------
+fixing problems:
+build -> clean
+build -> rebuild
+build -> build
+
+HOW TO UPDATE:
+----------------
+update version code and version name in build.gradle (module:app)
+
+build -> generate signed apk
+key store path: folder location for android.jks (should be this folder)
+
+key store password: complex pass
+key alias: key0
+key password: simple pass
+
+destination folder: folder to store it in (should store in adjacent apks folder)
+build type: release
+signature versions: check both. v1 jar and v2 full apk
+finish
+
+remember to update screenshots and description if necessary
+
+move apk to
+https://play.google.com/apps/publish
+replease amangement -> app releases -> production, beta, or alpha (click manage) -> create release
+upload apk
+enter release notes
+click save, click review, click start rollout to production
